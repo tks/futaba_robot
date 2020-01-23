@@ -1,0 +1,7 @@
+arm_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints:
+      - servo1
+      - servo2
+      - servo3
+      - servo4

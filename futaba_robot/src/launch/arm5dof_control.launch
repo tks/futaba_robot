@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find futaba_robot)/src/launch/arm5dof_controller.yaml"/>
+  <node args="servo3_position_controller servo4_position_controller servo1_position_controller servo2_position_controller joint_state_controller" name="controller_spawner" ns="arm5dof" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+    <remap from="/joint_states" to="/arm5dof/joint_states"/>
+  </node>
+</launch>

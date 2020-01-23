@@ -1,0 +1,23 @@
+arm5dof_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+    servo1_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: servo1
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+    servo2_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: servo2
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+    servo3_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: servo3
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+    servo4_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: servo4
+      pid: {p: 100.0, i: 0.01, d: 10.0}
