@@ -9,12 +9,16 @@ moveit! with 5-DOF robot arm
 
 https://youtu.be/2IKX3fjSp4U
 
-マニピュレータのCADモデルは[takayan660](https://github.com/takayan660)さんの[5DOF](https://github.com/takayan660/RobotArm_Simulator/tree/master/5DOF/インポートされたコンポーネント/Assem1)を使わせていただいた．
-(https://github.com/takayan660/RobotArm_Simulator/tree/master/5DOF/インポートされたコンポーネント/Assem1)
+- マニピュレータのCADモデルは[takayan660](https://github.com/takayan660)さんの[5DOF](https://github.com/takayan660/RobotArm_Simulator/tree/master/5DOF/インポートされたコンポーネント/Assem1)を使わせていただいた．
+  https://github.com/takayan660/RobotArm_Simulator/tree/master/5DOF/インポートされたコンポーネント/Assem1
 
-URDFの製作にあたり，[syuntoku14](https://github.com/syuntoku14)さんの[fusion2urdf](https://github.com/syuntoku14/fusion2urdf)を使わせていただいた．(https://github.com/syuntoku14/fusion2urdf)
 
-[ryuichiueda](https://github.com/ryuichiueda)先生のROS講義のスライドの一部を参考にさせていただいた．(https://github.com/ryuichiueda/robosys2019)
+- URDFの製作にあたり，[syuntoku14](https://github.com/syuntoku14)さんの[fusion2urdf](https://github.com/syuntoku14/fusion2urdf)を使わせていただいた．
+  https://github.com/syuntoku14/fusion2urdf
+
+
+- [ryuichiueda](https://github.com/ryuichiueda)先生のROS講義のスライドの一部を参考にさせていただいた．
+  https://github.com/ryuichiueda/robosys2019
 
 ## 環境
 Ubuntu 16.04
@@ -24,4 +28,7 @@ MoveIt! rviz gazebo
 ## 実行方法
 
 ~/catkin_ws/src下にgit clone
-catkin_make後，roslaunch futaba_robot/src/all.launch を実行
+
+catkin_make後，
+
+roslaunch futaba_robot/src/all.launch を実行
